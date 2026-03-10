@@ -1,0 +1,46 @@
+name: Linux-Desktop-2026
+on: workflow_dispatch
+
+jobs:
+  run-linux:
+    runs-on: ubuntu-latest # Pulls Ubuntu 24.04
+    steps:
+      - name: Connect Tailscale
+        uses: tailscale/github-action@v2
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTH_KEY }}
+          args: --hostname=gh-linux
+
+      - name: Install Desktop & Latest Apps
+        run: |
+          sudo apt update
+          # Install Desktop Environment and VNC
+          sudo apt install -y xfce4 xfce4-goodies tightvncserver dbus-x11 x11-xserver-utils
+          
+          # Fix for the "Grey Screen" - create proper xstartup file
+          mkdir -p ~/.vnc
+          echo "password" | vncpasswd -f > ~/.vnc/passwd
+          chmod 600 ~/.vnc/passwd
+          
+          cat <<EOF > ~/.vnc/xstartup
+          #!/bin/sh
+          unset SESSION_MANAGER
+          unset DBUS_SESSION_BUS_ADDRESS
+          startxfce4 &
+          EOF
+          chmod +x ~/.vnc/xstartup
+
+      - name: Auto-Update Software
+        run: |
+          # Install Chrome and latest tools automatically
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install -y ./google-chrome-stable_current_amd64.deb
+          sudo apt install -y htop git curl build-essential
+
+      - name: Start VNC Server
+        run: |
+          vncserver :1 -geometry 1920x1080 -depth 24
+          echo "Linux is LIVE! Connect to 'gh-linux:5901' via VNC Viewer."
+
+      - name: Keep Alive (6 Hours)
+        run: sleep 21600
