@@ -1,3 +1,6 @@
+<img width="851" height="315" alt="Untitled (71)" src="https://github.com/user-attachments/assets/dee86b6f-6529-4a9e-9cdc-305f09540642" />
+
+
 # LDP6 — Linux Disposable Platform (6-Hour)
 
 [![GitHub Actions](https://img.shields.io/badge/Powered%20by-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
@@ -21,6 +24,7 @@ A fully automated, cloud-hosted Ubuntu 24.04 desktop environment that spins up i
 - [FAQ](#faq)
 
 ---
+<img width="400" height="600" alt="Untitled (73)" src="https://github.com/user-attachments/assets/5c2250f9-c9cc-483e-a295-43b7f4c51ace" />
 
 ## Overview
 
