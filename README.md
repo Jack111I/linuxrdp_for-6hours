@@ -24,7 +24,7 @@ A fully automated, cloud-hosted Ubuntu 24.04 desktop environment that spins up i
 - [FAQ](#faq)
 
 ---
-<img width="400" height="600" alt="Untitled (73)" src="https://github.com/user-attachments/assets/5c2250f9-c9cc-483e-a295-43b7f4c51ace" />
+<img width="400" height="600" alt="Untitled (75)" src="https://github.com/user-attachments/assets/ccc64275-a399-4b3d-b906-095733334bda" />
 
 ## Overview
 
@@ -104,6 +104,8 @@ This setup takes about 5 minutes and only needs to be done once.
 Your key is now stored securely. GitHub Actions will inject it into the workflow at runtime without exposing it in logs.
 
 ---
+ 
+<p align="center"><img width="735" height="951" alt="download" src="https://github.com/user-attachments/assets/ca648eb6-2ad6-4881-8bdf-53f337b45ab4" /></p>
 
 ## Launching the Environment
 
