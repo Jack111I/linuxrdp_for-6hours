@@ -181,14 +181,9 @@ A: Yes. You have full `sudo` access within the session. Install anything you nee
 **Q: The address `gh-linux` isn't resolving — what do I do?**  
 A: Open the running workflow log and look for the line where Tailscale prints the assigned IP address. Use that IP directly in your VNC client (e.g., `100.x.x.x:5901`).
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 *Built for developers who need a clean slate, fast.*
 
-## Built by @Jack111I
+<h1 align="center"><b>Built by @Jack111I</b></h1>
