@@ -3,7 +3,6 @@
 [![GitHub Actions](https://img.shields.io/badge/Powered%20by-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
 [![Ubuntu 24.04](https://img.shields.io/badge/OS-Ubuntu%2024.04%20LTS-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 [![Tailscale](https://img.shields.io/badge/Network-Tailscale-242424?logo=tailscale&logoColor=white)](https://tailscale.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A fully automated, cloud-hosted Ubuntu 24.04 desktop environment that spins up in under 2 minutes via GitHub Actions. Access it securely from anywhere through a private Tailscale tunnel and a VNC connection — no cloud bills, no infrastructure management, no trace left behind.
 
