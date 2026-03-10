@@ -184,6 +184,6 @@ A: Open the running workflow log and look for the line where Tailscale prints th
 
 ---
 
-*Built for developers who need a clean slate, fast.*
+<p align="center"><b>Built for developers who need a clean slate, fast.</b></p>
 
 <h1 align="center"><b>Built by @Jack111I</b></h1>
